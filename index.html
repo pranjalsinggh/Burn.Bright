@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burn-Bright</title>
+  <link rel="icon" href="/images/logo5-removebg-preview.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/images/logo5-removebg-preview.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+<body onload="myFunction()">
+  
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!">
+          <img src="logo5-removebg-preview.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#"><span>Home</span></a></li>
+          <li class="translate-item">
+            <div id="google_translate_element"></div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
+        </svg>
+      </div>
+    </nav>
+
+    <!-- Menu (optional extra navigation area) -->
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Explore</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <h1>Why Burn-out? When you have Burn-Bright!</h1>
+      
+      <div class="container">
+        <h3>
+          <span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></span>
+        </h3>
+      </div>
+
+      <!-- External Typed.js Script -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      
+      <a href="#services" class="rainbow-button" alt="MindfulMate"></a>
+    </div>
+  </header>
+
+  <!-- JavaScript: Navbar appears only at the top -->
+  <script>
+    const nav = document.getElementById('nav');
+
+    window.addEventListener('scroll', () => {
+      // If the scroll position is at the very top, show the navbar; otherwise, hide it
+      if (window.scrollY === 0) {
+        nav.style.top = '0';
+      } else {
+        nav.style.top = '-200px';
+      }
+    });
+  </script>
+
+<!-- DO YOU KNOW  -->
+<section id="about" class="about">
+  <h1 class="section-heading" data-aos="flip-right">Do You Know?</h1>
+
+  <div class="about-sections-row">
+      <!-- Diabetes Card -->
+      <div class="card">
+          <div class="photo-container" data-aos="zoom-in">
+              <img class="photo" src="./images/diabetes.avif" alt="Diabetes risks">
+          </div>
+          <div class="about-content">
+              <p data-aos="fade-left">
+                  1. India is the “Diabetes Capital” of the World<br>
+                  2. 50% Don’t Know They Have It<br>
+                  3. Affecting Young People &amp; Children
+              </p>
+              
+              <div class="solution-highlight" data-aos="fade-up">
+                  <div class="solution-header">Our Solution:</div>
+                  <p>Prevent serious complications:</p>
+                  <ul class="solution-list">
+                      <li>Kidney failure</li>
+                      <li>Blindness</li>
+                      <li>Heart attack</li>
+                  </ul>
+                  <a href="/html/css/diabetesTest.html" class="take-test-btn">
+                      <span>Start Prevention Now</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Obesity Card -->
+      <div class="card">
+          <div class="photo-container" data-aos="zoom-in">
+              <img class="photo" src="./images/obesity.jpg" alt="Obesity risks">
+          </div>
+          <div class="about-content">
+              <p data-aos="fade-left">
+                  1. Leads to Premature Death<br>
+                  2. America's #1 Health Issue<br>
+                  3. Reduces Lifespan by 12-15 Years
+              </p>
+
+              <div class="solution-highlight" data-aos="fade-up">
+                  <div class="solution-header">Our Solution:</div>
+                  <p>Combat weight-related risks:</p>
+                  <ul class="solution-list">
+                      <li>Strokes</li>
+                      <li>Cancer</li>
+                      <li>Sleep Disorders</li>
+                  </ul>
+                  <a href="/html/css/obesityTest.html" class="take-test-btn">
+                      <span>Start Your Journey</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Insomnia Card -->
+      <div class="card">
+          <div class="photo-container" data-aos="zoom-in">
+              <img class="photo" src="./images/insomnia.avif" alt="Sleep disorders">
+          </div>
+          <div class="about-content">
+              <p data-aos="fade-left">
+                  1. 33% Indians Have Chronic Insomnia<br>
+                  2. Screen Time Reduces Lifespan<br>
+                  3. Hereditary Sleep Issues
+              </p>
+
+              <div class="solution-highlight" data-aos="fade-up">
+                  <div class="solution-header">Our Solution:</div>
+                  <p>Improve sleep quality:</p>
+                  <ul class="solution-list">
+                      <li>Memory preservation</li>
+                      <li>Emotional stability</li>
+                      <li>Dementia prevention</li>
+                  </ul>
+                  <a href="/html/css/insomniaTest.html" class="take-test-btn">
+                      <span>Get Better Sleep</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Hypertension Card -->
+      <div class="card">
+          <div class="photo-container" data-aos="zoom-in">
+              <img class="photo" src="./images/hypertension.webp" alt="Blood pressure">
+          </div>
+          <div class="about-content">
+              <p data-aos="fade-left">
+                  1. 1 in 3 Indian Adults Affected<br>
+                  2. 60% Unaware They Have It<br>
+                  3. Reduces Life Expectancy
+              </p>
+
+              <div class="solution-highlight" data-aos="fade-up">
+                  <div class="solution-header">Our Solution:</div>
+                  <p>Avoid health risks:</p>
+                  <ul class="solution-list">
+                      <li>Vision loss</li>
+                      <li>Aneurysm</li>
+                      <li>Organ damage</li>
+                  </ul>
+                  <a href="/html/css/hypertensionTest.html" class="take-test-btn">
+                      <span>Check Your Health</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  
+  <!-- What do we Provide with ? -->
+
+  <section id="services">
+    <h1>What do we <span class="gradient-text">PROVIDE</span> with?</h1>
+    <div class="container">
+
+      <!-- Cards remain the same structure but with updated classes -->
+      <div class="service-card">
+        <div class="popular-badge">Most Popular</div>
+        <div class="card-image">
+          <img src="./images/dopamine.jpg" alt="talking"/>
+        </div>
+        <div class="card-content">
+          <h2>Elevate your mood. Naturally</h2>
+          <p>Balanced dopamine = Better sleep regulation<br>Make happiness a HABIT.</p>
+          <a href="#" class="cta-button">
+            Check Out <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="popular-badge">Recommended</div>
+        <div class="card-image">
+          <img src="./images/lifestyle.jpg" alt="talking"/>
+        </div>
+        <div class="card-content">
+          <h2>Lifestyle and Diet</h2>
+          <p>The one who has health has hope and the one who has hope has everything.
+            <br>
+            Let’s build wellness rather than treat disease.
+          </p>
+          <a href="/html/lifestylediet.html" class="cta-button">
+            Check Out <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="popular-badge">Most Visited</div>
+        <div class="card-image">
+          <img src="./images/yoga6.jfif" alt="talking"/>
+        </div>
+        <div class="card-content">
+          <h2>Excercise and Yoga</h2>
+          <p> Transform Your Body, Energize Your Soul.
+            <br>
+            Fit Isn’t a Destination <br>It’s a Lifestyle.
+          </p>
+          <a href="/html/excerciseyoga.html" class="cta-button">
+            Check Out <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="popular-badge">Most Relaxing</div>
+        <div class="card-image">
+          <img src="./images/music.avif" alt="talking"/>
+        </div>
+        <div class="card-content">
+          <h2>Sonic Healing</h2>
+          <p>Soundwaves That Soothe Your Soul. <br>Heal through harmony. <br>A vibrational medicine.</p>
+          <a href="/html/sonictherepy.html" class="cta-button">
+            Check Out <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="popular-badge">Most Knowledgable</div>
+        <div class="card-image">
+          <img src="./images/book.jpg" alt="talking"/>
+        </div>
+        <div class="card-content">
+          <h2>Storytelling and much more</h2>
+          <p>Stories That Heal, Words That Transforms. <br>Poetries,Inspiration & Knowledge.</p>
+          <a href="/html/storytelling.html" class="cta-button">
+            Check Out <span class="arrow">→</span>
+          </a>
+                                                                      तद                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>        
+      </div>
+      
+    </div>
+</section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonial-container">
+    <h2 class="testimonial-heading">What People Say ?</h2>
+    
+    <!-- Slide 1 -->
+    <div class="testimonial-slide active-slide">
+        <img src="https://via.placeholder.com/200" alt="Client" class="client-image">
+        <div class="testimonial-content">
+            <p class="testimonial-text">"Absolutely amazing service! The team went above and beyond to help us achieve our goals. Highly recommended!"</p>
+            <h3 class="client-name">Pranjal Singh</h3>
+            <p class="client-role">Student</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="testimonial-slide">
+        <img src="https://via.placeholder.com/200" alt="Client" class="client-image">
+        <div class="testimonial-content">
+            <p class="testimonial-text">"The quality of work exceeded our expectations. Professional and timely delivery throughout the project."</p>
+            <h3 class="client-name">Michael Chen</h3>
+            <p class="client-role">CTO, Tech Corp</p>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="testimonial-slide">
+        <img src="https://via.placeholder.com/200" alt="Client" class="client-image">
+        <div class="testimonial-content">
+            <p class="testimonial-text">"Innovative solutions and excellent communication. We've seen a 150% increase in productivity since working with them."</p>
+            <h3 class="client-name">Emma Wilson</h3>
+            <p class="client-role">Operations Manager</p>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="testimonial-slide">
+        <img src="https://via.placeholder.com/200" alt="Client" class="client-image">
+        <div class="testimonial-content">
+            <p class="testimonial-text">"Reliable partner that truly understands our business needs. Their expertise made all the difference!"</p>
+            <h3 class="client-name">David Martinez</h3>
+            <p class="client-role">E-commerce Entrepreneur</p>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="testimonial-slide">
+        <img src="https://via.placeholder.com/200" alt="Client" class="client-image">
+        <div class="testimonial-content">
+            <p class="testimonial-text">"Outstanding results in record time. Their attention to detail and creative approach is unmatched."</p>
+            <h3 class="client-name">Linda Thompson</h3>
+            <p class="client-role">Marketing Director</p>
+        </div>
+    </div>
+
+    <button class="slider-btn prev-btn">❮</button>
+    <button class="slider-btn next-btn">❯</button>
+
+    <div class="dots-wrapper">
+        <span class="dot active-dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<script>
+    // Updated JavaScript to handle 5 slides
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(n) {
+        slides.forEach(slide => slide.classList.remove('active-slide'));
+        dots.forEach(dot => dot.classList.remove('active-dot'));
+        
+        currentSlide = (n + slides.length) % slides.length;
+        
+        slides[currentSlide].classList.add('active-slide');
+        dots[currentSlide].classList.add('active-dot');
+    }
+
+    // Previous/Next buttons
+    document.querySelector('.prev-btn').addEventListener('click', () => {
+        showSlide(currentSlide - 1);
+    });
+
+    document.querySelector('.next-btn').addEventListener('click', () => {
+        showSlide(currentSlide + 1);
+    });
+
+    // Dot clicks
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+</script>
+  
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="logo5-removebg-preview.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Jabalpur, MP</p>
+          <p class="email-id"><a href="mailto:sukoon665@gmail.com">pranjalsingh220801@gmail.com</a></p>
+          <p>+91 6260888066</p>
+        </div>
+      
+       
+        <!--OUR SERVICES COLUMN-->
+       
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="#" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-instagram"></i></li>
+              </a>
+    
+              <a href="#" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'hi,bn,ta,te,mr,gu,pa,kn,ml,or,as,awa,bho,doi,mai,mni-Mtei,sa',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  
+</body>
+
+</html>
